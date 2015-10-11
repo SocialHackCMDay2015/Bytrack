@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bytrack</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="landing" class="animated">
+      <div class="row rowHome">
+  			<div class="col-md-12 column" id="colLogo">
+  				<div id="logoCenter">
+  					<div id="logoCenterInner">
+  						<img src="img/bike.png" class="img-responsive" width="250" height="250">
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+      <div class="row" id="buttons">
+        <div id="landingHome">
+          <form id="log" role="form">
+            <div id="groupEmailLog" class="form-group animated">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                <input id="loginUsername" type="text" class="form-control" placeholder="Correo electrónico" required>
+              </div>
+            </div>
+            <div id="groupPasswordLog" class="form-group animated">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                <input id="loginPassword" type="password" class="form-control" placeholder="Contraseña" required>
+              </div>
+            </div>
+            <!--<div class="checkbox">
+              <label id="recordarLabel">
+                <input id="recordar" type="checkbox">Recordarme
+              </label>
+            </div>-->
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary" id="entrar">Iniciar Sesión</button>
+            </div>
+            <div class="form-group">
+              <p class="textInner">Ó</p>
+            </div>
+            <div class="form-group">
+              <p class="textInner">Inicia sesión con: <img id="face" src="img/fb.png" width="60" height="60"></p>
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-warning" id="registrar">Aún no tengo cuenta</button>
+            </div>
+            <div class="form-group">
+              <p id="fContra">Olvidé mi contraseña</p>
+            </div>
+          </form>
+        </div>
+  		</div>
+    </div>
+
+    <div id="totalContent">
+      <div id="cover"></div>
+      <nav id="main-nav">
+        <div id="nav-button"><span class="fa fa-navicon"></span></div>
+          <ul id="nav-list">
+            <li id="inicioMenu"><b>Inicio</li></b>
+            <li id="rutasMenu"><b>Rutas</li></b>
+            <li id="talleresMenu"><b>Talleres</li></b>
+            <li id="perfilMenu"><b>Perfil</li></b>
+            <li id="recordsMenu"><b>Records</li></b>
+            <li id="robosMenu"><b>Robos recientes</li></b>
+          </ul>
+        </nav>
+
+      <div id="home" class="animated">
+        <div class="row" id="rowTitle">
+      		<div class="col-md-12 column" id="colTitle">
+            <b><p id="title">Bytrack</p></b>
+      		</div>
+    		</div>
+        <div class="row" id="rowButton">
+          <div class="col-md-12 column">
+            <div id="inputDestino">
+              <input type="text" id="destino" placeholder="Destino">
+            </div>
+            <div id="button">
+              <img id="play" src="img/play.png" width= "200" height="200">
+              <img id="stop" src="img/stop.png" width= "200" height="200">
+            </div>
+        	</div>
+    		</div>
+        <div class="row" id="rowNews">
+    			<div class="col-md-12 column" id="colNews">
+            <b><p id="titleNews">Noticias sobre tu ruta</p></b>
+    			</div>
+    		</div>
+      </div>
+
+      <div id="robos" class="animated">
+        <div class="robo">
+          <img id="user" src="img/user.png" class="img-responsive" width="100" height="100"><p><b>Charles</b></p>
+          <img id="user" src="img/bike1.jpg" class="img-responsive" width="300" height="300">
+          <br>
+          <h4><b>Vista por última vez en Plaza Galerías, cerca de Costco.</b></h4>
+          <br>
+          <button class="btn btn-success" id="buttonC" type="submit"><b>Comentar</b></button>
+        </div>
+        <div class="robo">
+          <img id="user" src="img/user.png" class="img-responsive" width="100" height="100"><p><b>Michael</b></p>
+          <img id="user" src="img/bike2.jpg" class="img-responsive" width="300" height="300">
+          <br>
+          <h4><b>Vista por última vez en Plaza del Sol, cerca de Martí.</b></h4>
+          <br>
+          <button class="btn btn-success" id="buttonC" type="submit"><b>Comentar</b></button>
+        </div>
+        <div class="robo">
+          <img id="user" src="img/user.png" class="img-responsive" width="100" height="100"><p><b>Joshua</b></p>
+          <img id="user" src="img/bike3.jpg" class="img-responsive" width="300" height="300">
+          <br>
+          <h4><b>Vista por última vez en Plaza Patria, cerca de los tacos de perro que están al lado.</b></h4>
+          <br>
+          <button class="btn btn-success" id="buttonC" type="submit"><b>Comentar</b></button>
+        </div>
+        <div class="robo">
+          <img id="user" src="img/user.png" class="img-responsive" width="100" height="100"><p><b>Quiqui</b></p>
+          <img id="user" src="img/bike4.jpg" class="img-responsive" width="300" height="300">
+          <br>
+          <h4><b>Vista por última vez en ITESM, cerca de los Volteados.</b></h4>
+          <br>
+          <button class="btn btn-success" id="buttonC" type="submit"><b>Comentar</b></button>
+        </div>
+      </div>
+
+      <div id="talleres" class="animated">
+
+      </div>
+
+      <div id="rutas" class="animated">
+        <iframe src="rutas/index.html" style="position: absolute; width: 100%; border: none">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      </div>
+
+      <div id="records" class="animated">
+        <div id="first">
+          <img src="img/first.png">
+          <p class="firstText"><b>Chewbacca</b></p>
+          <p class="firstText"><b>0' 10''</b></p>
+        </div>
+        <div class="row rowH">
+          <div class="col-md-4 columnH">
+            <b>Lugar</b>
+          </div>
+          <div class="col-md-4 columnH">
+            <b>Nombre</b>
+          </div>
+          <div class="col-md-4 columnH">
+            <b>Tiempo</b>
+          </div>
+        </div>
+        <div class="row rowH">
+          <div class="col-md-4 columnH">
+            2
+          </div>
+          <div class="col-md-4 columnH">
+            Tony Stark
+          </div>
+          <div class="col-md-4 columnH">
+            0' 50''
+          </div>
+        </div>
+        <div class="row rowH">
+          <div class="col-md-4 columnH">
+            3
+          </div>
+          <div class="col-md-4 columnH">
+            Peter Parker
+          </div>
+          <div class="col-md-4 columnH">
+            1' 50''
+          </div>
+        </div>
+        <div class="row rowH">
+          <div class="col-md-4 columnH">
+            4
+          </div>
+          <div class="col-md-4 columnH">
+            Han Solo
+          </div>
+          <div class="col-md-4 columnH">
+              2' 00'
+          </div>
+        </div>
+      </div>
+
+      <div id="perfil" class="animated">
+        <div class="row" id="rowPerfilImage">
+          <div class="col-md-12" id="columnImageP">
+              <img id="imgSel" src="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 colImg">
+            <img class="imgOpt" id="co" src="img/co.png" width="200" height="200">
+            <img class="imgOpt" id="clock" src="img/clock.png" width="200" height="200">
+          </div>
+          <div class="col-md-6 colImg">
+            <img class="imgOpt" id="dollar" src="img/dollar.png" width="200" height="200">
+            <img class="imgOpt" id="fire" src="img/fire.png" width="200" height="200">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="destinoDef" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Rutas más comúnes</h4>
+            </div>
+            <div class="modal-body">
+              <button class="btn btn-default" id="buttonPref" type="submit">Casa - ITESM</button>
+              <button class="btn btn-default" id="buttonPref" type="submit">Trabajo - Casa</button>
+              <button class="btn btn-default" id="buttonPref" type="submit">Club de bicis - Casa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -33.8688, lng: 151.2195},
+          zoom: 13,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
+        });
+
+        var markers = [];
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function() {
+          var places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+
+          // Clear out the old markers.
+          markers.forEach(function(marker) {
+            marker.setMap(null);
+          });
+          markers = [];
+
+          // For each place, get the icon, name and location.
+          var bounds = new google.maps.LatLngBounds();
+          places.forEach(function(place) {
+            var icon = {
+              url: place.icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25)
+            };
+
+            // Create a marker for each place.
+            markers.push(new google.maps.Marker({
+              map: map,
+              icon: icon,
+              title: place.name,
+              position: place.geometry.location
+            }));
+
+            if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
+          });
+          map.fitBounds(bounds);
+        });
+        }
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery_1.11.3.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/parse-1.2.13.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
